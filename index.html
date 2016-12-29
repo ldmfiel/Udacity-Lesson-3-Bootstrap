@@ -8,36 +8,50 @@
         <link href="css/bootstrap.min.css" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Lato:100,300" rel="stylesheet">
         <link href="css/style.css" rel="stylesheet">
+        <script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
+        <script type="text/javascript" src="js/bootstrap.min.js"></script>
         <title>Bootstrap Testpage</title>        
     </head>
     <body>
-    <div class="container">
-        <div class="row">
-            <div class="col-md-6 col-sm-6 col-xs-6"><img src="images/128x128.png" class="img-responsive title-logo" alt="logoimage"></h1></div>
-            <div class="col-md-6 col-sm-6 col-xs-6"><h1 class="text-right text-uppercase sm-text-right text-thin">firstname<br><small>lastname</small></h1></div>
-        </div>  
-        <div class="row">
-            <div class="col-md-12"><hr></div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-sm-6 col-xs-6"><img src="images/128x128.png" class="img-responsive title-logo" alt="logoimage"></div>
+                <div class="col-md-6 col-sm-6 col-xs-6"><h1 class="text-right text-uppercase sm-text-right text-thin">firstname<br><small>lastname</small></h1></div>
+            </div>  
+            <div class="row">
+                <div class="col-md-12"><hr></div>
+            </div>
+            <div class="row">
+                <div class="col-md-12 col-xs-12"><img src="images/1140x350.png" class="img-responsive" alt="mainimage"></div>
+            </div>
+            <div class="row">
+                <div class="col-md-12 col-xs-12 text-muted"><h2>Featured Work</h2></div>
+            </div>
+            <div class="row">
+                <div class="col-md-4"><img src="images/300x200.png" class="projectimg img-responsive" alt="project image one" data-toggle="modal" data-target="#project1modal"><h3 class="text-uppercase text-center">PROJECT TITLE</h3><p class="text-center text-muted">ProjectURL1</p></div>
+                <div class="col-md-4"><img src="images/300x200.png" class="projectimg img-responsive" alt="project image two"><h3 class="text-uppercase text-center">PROJECT TITLE</h3><p class="text-center text-muted">ProjectURL2</p></div>
+                <div class="col-md-4"><img src="images/300x200.png" class="projectimg img-responsive" alt="project image three"><h3 class="text-uppercase text-center">PROJECT TITLE</h3><p class="text-center text-muted">ProjectURL3</p></div>
+            </div>
         </div>
-        <div class="row">
-            <div class="col-md-12 col-xs-12"><img src="images/1140x350.png" class="img-responsive" alt="mainimage"></div>
+
+        <div class="modal fade" id="project1modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h4 class="modal-title" id="myModalLabel">PROJECT TITLE</h4>
+                    </div>
+                    <div class="modal-body">
+                        <img class="img-responsive" src="images/300x200.png">
+                        This was my first project in this class. I learned a lot about html and css.
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    </div>
+                </div>            
+            </div>
         </div>
-        <div class="row">
-            <div class="col-md-12 col-xs-12 text-muted"><h2>Featured Work</h2></div>
-        </div>
-        <div class="row">
-            <div class="col-md-4"><img src="images/300x200.png" class=" projectimg img-responsive" alt="project image one"><h3 class="text-uppercase text-center">PROJECT TITLE</h3><p class="text-center text-muted">ProjectURL</p></div>
-            <div class="col-md-4"><img src="images/300x200.png" class="projectimg img-responsive" alt="project image one"><h3 class="text-uppercase text-center">PROJECT TITLE</h3><p class="text-center text-muted">ProjectURL</p></div>
-            <div class="col-md-4"><img src="images/300x200.png" class="projectimg img-responsive" alt="project image one"><h3 class="text-uppercase text-center">PROJECT TITLE</h3><p class="text-center text-muted">ProjectURL</p></div>
-        </div>
-    </div>
-    
-    
-    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="js/bootstrap.min.js"></script>
-    
+        
+
     </body>
     
 </html>
